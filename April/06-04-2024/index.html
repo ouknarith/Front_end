@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <span class="randomnum"></span>
+    <button class="BTN">random number</button>
+    <button class="goback">Go_Back</button>
+    <script>
+        var seatnumber = 1;
+        const randomnum = document.querySelector(".randomnum");
+        const Go_Back = document.querySelector(".goback");
+        const BTN = document.querySelector(".BTN");
+        BTN.addEventListener("click",()=>{
+            const randomNumber = Math.floor(Math.random() * 1000) + 1; //this line of code will create a random number between 1 to 100
+            randomnum.innerHTML = seatnumber;
+            seatnumber = seatnumber + 1;
+
+            goback.addEventListener("click", ClickOn);
+
+            function ClickOn () {
+                location.href = "./index3.html";
+            }
+
+
+        });
+
+    </script>
+</body>
+</html>

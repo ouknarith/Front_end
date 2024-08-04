@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>User Registration Form</h2>
+        <form action="submit.php" method="post">
+            <input type="hidden" id="id" name="id"> <!-- hidden input for record ID -->
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" required><br><br>
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" required><br><br>
+
+            <label for="sex">Sex:</label>
+            <select id="sex" name="sex" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea><br><br>
+
+            <label for="datetime">Date and Time:</label>
+            <input type="datetime-local" id="datetime" name="datetime" required><br><br>
+
+            <label for="phonenumber">Phone Number:</label>
+            <input type="tel" id="phonenumber" name="phonenumber" required><br><br>
+
+            <div class="btn-group">
+                <button type="submit" id="save-btn" name="save">Save</button>
+                <button type="button" id="edit-btn" name="edit">Edit</button>
+                <button type="button" id="delete-btn" name="delete">Delete</button>
+                <button type="submit" id="update-btn" name="update" style="display: none;">Update</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script> <!-- Include JavaScript file -->
+</body>
+</html>

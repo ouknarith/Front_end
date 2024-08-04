@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main">
+    <input type="text" class="UserInput">
+    <button class="F">Fahrenheit to Celsius</button>
+    <button class="C">Celsius to Fahrenheit</button>
+
+</div>
+
+
+    <script>
+        const User = document.querySelector(".UserInput");
+
+        function CtoF()
+        {
+
+            const C = parseFloat(User.value);
+            const F = (( C *9 ) / 5) + 32;
+
+            alert(F);
+        }
+
+        function FtoC()
+        {
+            const F = parseFloat(User.value);
+            const C = ((F - 32) * 5) / 9;
+
+            alert(C);
+        }
+        const Fahrenheit = document.querySelector(".F");
+        const Celsius = document.querySelector(".C");
+        Fahrenheit.addEventListener("click", CtoF);
+        Celsius.addEventListener("click", FtoC);
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="text" class="Userinput">
+    <button class="M">Meter to Millimeter</button>
+    <button class="CM">Centimeter to Meter</button>
+
+    <script>
+        const User = document.querySelector(".Userinput");
+        const Meter = document.querySelector(".M");
+        const Centimeter = document.querySelector(".CM");
+        Meter.addEventListener("click", MtoCM);
+        Centimeter.addEventListener("click", CMtoM);
+        function MtoCM()
+        {
+            const M = parseFloat(User.value);
+            const CM = M * 100;
+            alert (CM+"cm");
+
+        }
+
+        function CMtoM()
+        {
+            const CM = parseFloat(User.value);
+            const M = CM / 100;
+            alert (M + "m");
+        }
+
+    </script>
+</body>
+</html>

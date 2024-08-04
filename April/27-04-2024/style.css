@@ -1,0 +1,12 @@
+body{
+    display: flex;
+}
+input
+{
+    width: 200px;
+    height: 150px;
+    background-color: aqua;
+    border: none;
+    color: rgb(239, 108, 108);
+    font-size: 30px;
+}

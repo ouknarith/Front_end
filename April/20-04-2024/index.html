@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="name">
+    <button class="Greet">Greet</button>
+    <script>
+        const Name = document.querySelector(".name");
+        function Greeting()
+        {
+            alert("Hello wrold");
+        }
+        function Greeting2()
+        {
+            alert("Hello World2" + Name.value);
+        }
+        
+        const GreetBTN = document.querySelector(".Greet");
+        GreetBTN.addEventListener("click", Greeting2);
+
+    </script>
+</body>
+</html>

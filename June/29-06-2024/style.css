@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+.sub_con{
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.h{
+    
+    text-align: center;
+    color: blue;
+}
+.hh{
+    font-size: 30px;
+    font-weight: 20px;
+
+}
+.picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}

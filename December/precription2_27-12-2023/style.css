@@ -1,0 +1,27 @@
+.Medical_History
+{
+    width: 300px;
+    height: 50px;
+}
+.type
+{
+    width: 200px;
+    height: 40px;
+}
+.dob
+{
+    width: 100px;
+    height: 30px;
+}
+.RegisterBTN
+{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    color: blue;
+}
+.Case
+{   display: flex;
+    flex-direction: row;
+}
+

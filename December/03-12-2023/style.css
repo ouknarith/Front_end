@@ -1,0 +1,48 @@
+.container
+{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 200px;
+    padding-left: 500px;
+    gap: 30px;
+}
+img
+{
+
+}
+input
+{
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+    border-radius: 10px;
+    text-align: center;
+}
+.Model
+{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 200px;
+    padding-left: 100px;
+    gap: 10px;
+}
+.Model-1
+{
+    width: 150px;
+    height: 50px;
+    font-size: 20ppx;
+    font-weight: bolder;
+    color: blue;
+}
+.Model-2
+{
+    width: 150px;
+    height: 50px;
+    font-size: 20ppx;
+    font-weight: bolder;
+    color: blue;
+}

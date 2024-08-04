@@ -1,0 +1,56 @@
+body
+{
+    padding: 0px;
+    margin: 0;
+    overflow: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: gold;
+}
+.name, 
+.sex, 
+.age, 
+.phone, 
+.address,
+.Medical_Signs, 
+.Medical_Diagnosis, 
+.Enter_Drug,
+.date_time
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 60px;
+}
+.Case
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 12px;
+}
+
+h1
+{
+    align-items: center;
+    color: blue;
+}
+p
+{
+    color: blue;
+}
+
+.RegisterBTN
+{
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 5px;
+    border: none;
+    color: blue;
+    background-color: rgb(233, 234, 211)
+}

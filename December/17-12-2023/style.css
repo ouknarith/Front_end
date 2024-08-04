@@ -1,0 +1,38 @@
+.Signup_Page
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+.Signup_Name input, .Signup_Number input, .Signup_Email input, .Signup_Password input
+{
+    height: 50px;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    width: 800px;
+}
+.Signup_Name input
+{
+    width: 395px;
+}
+.RegisterBTN,.Location select
+{
+    height: 50px;
+    font-size: x-large;
+}
+.Location_Province
+{
+    width: 53vw;
+}
+.RegisterBTN
+{
+    width: 53vw;
+}

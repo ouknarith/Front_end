@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+</head>
+<body>
+    <div class="Input_form">
+        <input type="text" placeholder="Enter your name" class="Name">
+        <input type="email" placeholder="Enter your email" class="email">
+        <input type="text" placeholder="Enter your phone number" class="phone">
+        <input type="text" placeholder="Enter your address" class="address">
+        <div class="Case">
+            <input type="checkbox" class="Old_Case">
+            <p>Old Case</p>
+            <input type="checkbox" class="New_Case">
+            <p>New Case</p>
+        </div>
+            <textarea name="Medical_History" class="Medical_History" placeholder="Enter your medical history"></textarea>
+        
+        <select class="type">
+            <option value="InternalMedicine">Internal medicine</option>
+            <option value="Orthopedics">Orthopedics</option>
+        </select>
+            <input type="date" placeholder="Enter your date of birth" class="dob">
+            <button class="RegisterBTN" onclick="submitForm()">Submit</button>
+        <div class="DisplayResult">
+            <span class="Result"></span>
+        </div>    
+    </div>
+    <script src="./script.js"></script>
+    <script>
+        function submitForm(){
+            //Selecting input values
+            var name = document.querySelector('.name').value;
+            var email = document.querySelector('.email').value;
+            var phone = document.querySelector('.phone').value;
+            var address = document.querySelector('.address').value;
+            var type = document.querySelector('.type').value;
+            var dob = document.querySelector('.dob').value;
+            var Medical_History = document.querySelector('.Medical_History').value;
+            //Displaying the results(you can modify this part as needed)
+            var resultSpan = document.querySelector('.Result');
+            resultSpan.textContent = `Name:${name},Email:${email},Phone:${phone},Address:${address},Type:${type},DOB:${dob},Medical_History:${Medical_History}`;
+        }
+    </script>
+    
+</body>
+</html>

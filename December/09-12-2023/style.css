@@ -1,0 +1,36 @@
+body
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 500px;
+    height: 200px;
+    gap: 20px;
+    border: 2px solid black;
+}
+img{
+    width: 250px;
+    height: 100px;
+    background-color: none;
+    text-align: center;
+    padding:10px
+}
+.Model{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+p{
+    font-size: 15px;
+    font-weight: bolder;
+}
